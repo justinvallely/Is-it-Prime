@@ -13,45 +13,53 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJB-bh-sr1">
-                                <rect key="frame" x="240" y="61" width="120" height="21"/>
+                                <rect key="frame" x="100" y="61" width="120" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Ad1-Me-FT4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Upo-xp-orm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="bjJ-ls-UMc"/>
                                     <constraint firstAttribute="width" constant="120" id="izD-eY-cuD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a number in the box:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSw-zp-aDX">
-                                <rect key="frame" x="189" y="124" width="222" height="21"/>
+                                <rect key="frame" x="49" y="124" width="222" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="AQz-0s-eOq"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="SsN-p9-jzn"/>
                                     <constraint firstAttribute="width" constant="222" id="aZn-a0-X20"/>
                                     <constraint firstAttribute="height" constant="21" id="dXF-Mf-sm4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="222" id="hX1-fY-DhT"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="222" id="zZm-jQ-Myw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. 17" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D3A-lH-HvT">
-                                <rect key="frame" x="252" y="158" width="97" height="30"/>
+                                <rect key="frame" x="112" y="158" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="1Bt-hr-aED"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="8vJ-Lt-ave"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="KRP-iW-jdo"/>
                                     <constraint firstAttribute="height" constant="30" id="Thp-LF-VPN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1z-ep-zaP">
-                                <rect key="frame" x="262" y="196" width="77" height="30"/>
+                                <rect key="frame" x="122" y="196" width="77" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="1Zh-rj-XrM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="3ag-pL-lvL"/>
                                     <constraint firstAttribute="height" constant="30" id="GIp-9S-HXB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77" id="PYK-Ds-3cx"/>
                                 </constraints>
                                 <state key="normal" title="Is it Prime?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,30 +69,43 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOS-Bn-AT9">
-                                <rect key="frame" x="175" y="251" width="250" height="21"/>
+                                <rect key="frame" x="35" y="251" width="250" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Jgt-Vm-xn9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Nc7-Nt-l5p"/>
                                     <constraint firstAttribute="width" constant="250" id="WsA-Zs-Xei"/>
                                     <constraint firstAttribute="height" constant="21" id="hFV-10-vJJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dOS-Bn-AT9" secondAttribute="centerX" id="3Ql-sF-qbz"/>
                             <constraint firstAttribute="centerX" secondItem="lJB-bh-sr1" secondAttribute="centerX" id="5hy-TB-ym4"/>
+                            <constraint firstItem="U1z-ep-zaP" firstAttribute="top" secondItem="D3A-lH-HvT" secondAttribute="bottom" constant="8" id="8Ey-7t-2Q8"/>
                             <constraint firstItem="D3A-lH-HvT" firstAttribute="top" secondItem="tSw-zp-aDX" secondAttribute="bottom" constant="13" id="9xL-RP-jMq"/>
+                            <constraint firstItem="dOS-Bn-AT9" firstAttribute="top" secondItem="U1z-ep-zaP" secondAttribute="bottom" constant="25" id="BN8-Gd-0K7"/>
+                            <constraint firstAttribute="centerX" secondItem="lJB-bh-sr1" secondAttribute="centerX" id="Cva-LA-Tf9"/>
+                            <constraint firstItem="lJB-bh-sr1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="41" id="OGU-GB-hh2"/>
                             <constraint firstItem="dOS-Bn-AT9" firstAttribute="top" secondItem="U1z-ep-zaP" secondAttribute="bottom" constant="28" id="Pcg-gQ-wVj"/>
                             <constraint firstAttribute="centerX" secondItem="tSw-zp-aDX" secondAttribute="centerX" id="QZS-En-LlH"/>
+                            <constraint firstItem="D3A-lH-HvT" firstAttribute="top" secondItem="tSw-zp-aDX" secondAttribute="bottom" constant="13" id="SLr-bw-mFh"/>
                             <constraint firstItem="lJB-bh-sr1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="41" id="Wpd-iP-iRE"/>
                             <constraint firstAttribute="centerX" secondItem="U1z-ep-zaP" secondAttribute="centerX" id="bFJ-w4-j0U"/>
+                            <constraint firstAttribute="centerX" secondItem="U1z-ep-zaP" secondAttribute="centerX" id="cVR-It-UBX"/>
+                            <constraint firstItem="tSw-zp-aDX" firstAttribute="top" secondItem="lJB-bh-sr1" secondAttribute="bottom" constant="42" id="fxt-rI-z9b"/>
+                            <constraint firstAttribute="centerX" secondItem="tSw-zp-aDX" secondAttribute="centerX" id="gS4-Q2-8bU"/>
                             <constraint firstAttribute="centerX" secondItem="dOS-Bn-AT9" secondAttribute="centerX" id="jIp-La-xbQ"/>
                             <constraint firstItem="U1z-ep-zaP" firstAttribute="top" secondItem="D3A-lH-HvT" secondAttribute="bottom" constant="8" id="mpQ-cy-oTb"/>
                             <constraint firstAttribute="centerX" secondItem="D3A-lH-HvT" secondAttribute="centerX" id="nm0-tu-AzT"/>
                             <constraint firstItem="tSw-zp-aDX" firstAttribute="top" secondItem="lJB-bh-sr1" secondAttribute="bottom" constant="42" id="oQE-bL-cY6"/>
+                            <constraint firstAttribute="centerX" secondItem="D3A-lH-HvT" secondAttribute="centerX" id="wbH-ti-MLN"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="inputNumber" destination="D3A-lH-HvT" id="c2M-l1-mPr"/>
                         <outlet property="outputLabel" destination="dOS-Bn-AT9" id="mct-rH-S11"/>
